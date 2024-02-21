@@ -16,8 +16,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/grupo-2-1/")
 public class HomeController {
+   
     @GetMapping("descripcion")
     public String paginaDescripcion(Model model) {
         setBreadcrumbs(model,"Descripción");
@@ -28,7 +29,7 @@ public class HomeController {
         List<BreadcrumbItem> breadcrumbs = new ArrayList<>();
         breadcrumbs.add(new BreadcrumbItem("Inicio", "/"));
         breadcrumbs.add(new BreadcrumbItem(currentPage, null)); // La página actual no tiene enlace
-        
+
         model.addAttribute("breadcrumbs", breadcrumbs);
     }
 }
