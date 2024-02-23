@@ -16,14 +16,29 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 
 @Controller
-@RequestMapping("/grupo-2-1/")
+@RequestMapping("/grupo-2-1")
 public class HomeController {
-   
-    @GetMapping("descripcion")
+
+    @GetMapping("/")
+    public String paginaDescripcion2(Model model) {
+        setBreadcrumbs(model,"Inicio");
+        return "index";
+    }
+   /* 
+    @GetMapping("/descripcion")
     public String paginaDescripcion(Model model) {
         setBreadcrumbs(model,"Descripción");
         return "descripcion";
-    }
+    }*/
+    /*@GetMapping("/grupo-2-1")
+    public String index() {
+        return "index"; // Devuelve el nombre de la plantilla HTML que se cargará
+    }*/
+
+    /*@GetMapping("/descripcion")
+    public String descripcion() {
+        return "descripcion"; // Devuelve el nombre de la plantilla HTML que se cargará
+    }*/
     
     private void setBreadcrumbs(Model model, String currentPage){
         List<BreadcrumbItem> breadcrumbs = new ArrayList<>();
