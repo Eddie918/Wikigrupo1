@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-   name: grupo-2-1
+   name: grupo21
    namespace: thymeleaf
 spec:
    ingressClassName: public
@@ -13,6 +13,6 @@ spec:
          pathType: Prefix
          backend:
            service:
-             name: grupo-2-1
+             name: grupo21
              port:
                number: 8080
