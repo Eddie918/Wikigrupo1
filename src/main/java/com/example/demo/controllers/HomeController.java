@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 
 @Controller
-@RequestMapping("/grupo-2-1")
+@RequestMapping("/grupo21")
 public class HomeController {
 
     @GetMapping("/")
