@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.example.demo.entity.BreadcrumbItem;
 
 @Controller
-@RequestMapping("/grupo-2-1/descripcion")
+@RequestMapping("/grupo21/descripcion")
 public class DescripcionController {
 
     @GetMapping("")
