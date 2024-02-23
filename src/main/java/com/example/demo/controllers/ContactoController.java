@@ -5,26 +5,20 @@ import java.util.List;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.demo.entity.BreadcrumbItem;
 
-import org.springframework.web.bind.annotation.GetMapping;
-
-
-
 @Controller
-@RequestMapping("/grupo21")
-public class HomeController {
-
-    @GetMapping("/")
-    public String paginaInicio(Model model) {
-        setBreadcrumbs(model,"Inicio");
-        return "index";
+@RequestMapping("/grupo21/contacto")
+public class ContactoController {
+    @GetMapping("")
+    public String paginaContacto(Model model){
+        setBreadcrumbs(model,"Contacto");
+        return "contacto";
     }
-    
+
     private void setBreadcrumbs(Model model, String currentPage){
         List<BreadcrumbItem> breadcrumbs = new ArrayList<>();
         breadcrumbs.add(new BreadcrumbItem("Inicio", "/"));
