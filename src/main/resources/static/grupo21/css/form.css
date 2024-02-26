@@ -11,3 +11,15 @@
     width:100%;
     position:absolute;
 }
+
+@keyframes blink {
+    50% {
+    border-color: transparent;
+    }
+}
+
+.typing-animation::after {
+    content: '|';
+    margin-left: 2px;
+    animation: blink 1s step-end infinite;
+}
