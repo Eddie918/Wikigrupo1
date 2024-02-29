@@ -18,6 +18,7 @@ public class ContactoController {
         setBreadcrumbs(model,"Contacto");
         return "contacto";
     }
+    
 
     private void setBreadcrumbs(Model model, String currentPage){
         List<BreadcrumbItem> breadcrumbs = new ArrayList<>();
