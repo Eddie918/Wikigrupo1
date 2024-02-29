@@ -11,8 +11,6 @@ import com.example.demo.entity.BreadcrumbItem;
 
 import org.springframework.web.bind.annotation.GetMapping;
 
-
-
 @Controller
 @RequestMapping("/grupo21")
 public class HomeController {
