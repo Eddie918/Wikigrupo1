@@ -10799,7 +10799,7 @@ header.masthead .post-heading .meta a {
 
 .col-lg-4 {
   margin-bottom: 1.5rem;
-  text-align: center;
+  text-align: justify;
 }
 .col-lg-4 p {
   margin-right: .75rem;
@@ -10815,4 +10815,8 @@ header.masthead .post-heading .meta a {
 .navbar-logo {
   margin-right: 10px; /* Espacio entre el logo y el texto */
   height: 40px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+.texto-justificado {
+  text-align: justify;
 }
